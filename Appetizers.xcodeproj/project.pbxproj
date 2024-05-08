@@ -15,6 +15,7 @@
 		DD3679F82BE062E70095023E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3679F72BE062E70095023E /* AccountView.swift */; };
 		DD3679FA2BE062F00095023E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3679F92BE062F00095023E /* OrderView.swift */; };
 		DDB64C502BEADBAD002ECFEE /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C4F2BEADBAD002ECFEE /* Appetizer.swift */; };
+		DDB64C522BEC451E002ECFEE /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C512BEC451E002ECFEE /* AppetizerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DD3679F72BE062E70095023E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DD3679F92BE062F00095023E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		DDB64C4F2BEADBAD002ECFEE /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		DDB64C512BEC451E002ECFEE /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				DD3679F72BE062E70095023E /* AccountView.swift */,
 				DD3679F92BE062F00095023E /* OrderView.swift */,
 				DDB64C4F2BEADBAD002ECFEE /* Appetizer.swift */,
+				DDB64C512BEC451E002ECFEE /* AppetizerListCell.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB64C502BEADBAD002ECFEE /* Appetizer.swift in Sources */,
+				DDB64C522BEC451E002ECFEE /* AppetizerListCell.swift in Sources */,
 				DD3679F82BE062E70095023E /* AccountView.swift in Sources */,
 				DD3679E92BE062260095023E /* AppetizerTabView.swift in Sources */,
 				DD3679E72BE062260095023E /* AppetizersApp.swift in Sources */,
