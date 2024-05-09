@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    @StateObject private var viewModel = AppetizerListViewModel()
+    
     var body: some View {
         NavigationStack {
-            List(MockData.appetizers) { appetizer in
-                AppetizerListCell(appetizer: appetizer)
+            if viewModel.appetizers.isEmpty {
+                List(MockData.appetizers) { mockAppetizer in
+                    AppetizerListCell(appetizer: mockAppetizer)
+                }
+                .redacted(reason: .placeholder)
+                .blinking(duration: viewModel.appetizers.isEmpty ? 0.7 : 0)
+                .listStyle(.plain)
+                .navigationTitle("🍟 Appetizers")
+            } else {
+                List(viewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizer: appetizer)
+                }
+                .listStyle(.plain)
+                .navigationTitle("🍟 Appetizers")
             }
-            .listStyle(.plain)
-            .navigationTitle("🍟 Appetizers")
+            
+        }
+        .onAppear {
+            viewModel.getAppetizers()
         }
     }
 }

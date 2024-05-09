@@ -18,6 +18,8 @@
 		DDB64C522BEC451E002ECFEE /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C512BEC451E002ECFEE /* AppetizerListCell.swift */; };
 		DDB64C542BEC4681002ECFEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C532BEC4681002ECFEE /* NetworkManager.swift */; };
 		DDB64C562BEC47D5002ECFEE /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C552BEC47D5002ECFEE /* APError.swift */; };
+		DDB64C582BEC5064002ECFEE /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */; };
+		DDB64C5A2BEC5868002ECFEE /* BlinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		DDB64C512BEC451E002ECFEE /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		DDB64C532BEC4681002ECFEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DDB64C552BEC47D5002ECFEE /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				DDB64C512BEC451E002ECFEE /* AppetizerListCell.swift */,
 				DDB64C532BEC4681002ECFEE /* NetworkManager.swift */,
 				DDB64C552BEC47D5002ECFEE /* APError.swift */,
+				DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */,
+				DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				DDB64C502BEADBAD002ECFEE /* Appetizer.swift in Sources */,
 				DDB64C562BEC47D5002ECFEE /* APError.swift in Sources */,
 				DDB64C522BEC451E002ECFEE /* AppetizerListCell.swift in Sources */,
+				DDB64C582BEC5064002ECFEE /* AppetizerListViewModel.swift in Sources */,
+				DDB64C5A2BEC5868002ECFEE /* BlinkViewModifier.swift in Sources */,
 				DD3679F82BE062E70095023E /* AccountView.swift in Sources */,
 				DD3679E92BE062260095023E /* AppetizerTabView.swift in Sources */,
 				DDB64C542BEC4681002ECFEE /* NetworkManager.swift in Sources */,
