@@ -12,7 +12,7 @@ struct AppetizerListView: View {
     
     var body: some View {
         NavigationStack {
-            if viewModel.appetizers.isEmpty {
+            if viewModel.appetizers.isEmpty && viewModel.alertItem == nil {
                 List(MockData.appetizers) { mockAppetizer in
                     AppetizerListCell(appetizer: mockAppetizer)
                 }
@@ -31,6 +31,15 @@ struct AppetizerListView: View {
         }
         .onAppear {
             viewModel.getAppetizers()
+        }
+        .alert(
+            viewModel.alertItem?.title ?? "Server Error",
+            isPresented: .constant(viewModel.alertItem != nil),
+            presenting: viewModel.alertItem
+        ) { _ in
+            Button("Ok") {}
+        } message: { item in
+            item.message
         }
     }
 }
