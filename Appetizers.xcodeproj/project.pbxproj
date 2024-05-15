@@ -21,6 +21,7 @@
 		DDB64C582BEC5064002ECFEE /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */; };
 		DDB64C5A2BEC5868002ECFEE /* BlinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */; };
 		DDF8F0962BF42F45002D92A8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F0952BF42F45002D92A8 /* Alert.swift */; };
+		DDF8F09A2BF43895002D92A8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F0992BF43895002D92A8 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkViewModifier.swift; sourceTree = "<group>"; };
 		DDF8F0952BF42F45002D92A8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		DDF8F0992BF43895002D92A8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */,
 				DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */,
 				DDF8F0952BF42F45002D92A8 /* Alert.swift */,
+				DDF8F0992BF43895002D92A8 /* LoadingView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				DDB64C542BEC4681002ECFEE /* NetworkManager.swift in Sources */,
 				DD3679E72BE062260095023E /* AppetizersApp.swift in Sources */,
 				DD3679F62BE062DA0095023E /* AppetizerListView.swift in Sources */,
+				DDF8F09A2BF43895002D92A8 /* LoadingView.swift in Sources */,
 				DD3679FA2BE062F00095023E /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

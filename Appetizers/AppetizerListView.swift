@@ -12,7 +12,7 @@ struct AppetizerListView: View {
     
     var body: some View {
         NavigationStack {
-            if viewModel.appetizers.isEmpty && viewModel.alertItem == nil {
+            if viewModel.isLoading {
                 List(MockData.appetizers) { mockAppetizer in
                     AppetizerListCell(appetizer: mockAppetizer)
                 }
