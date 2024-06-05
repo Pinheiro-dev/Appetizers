@@ -9,26 +9,21 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthdate = Date()
-    @State private var extraNapkins = false
-    @State private var frequentRefills = false
+    @StateObject var viewModel = AccountViewModel()
     
     var body: some View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First Name", text: $viewModel.firstName)
+                    TextField("Last Name", text: $viewModel.lastName)
+                    TextField("Email", text: $viewModel.email)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled()
-                    DatePicker("Birthday", selection: $birthdate, displayedComponents: .date)                    
+                    DatePicker("Birthday", selection: $viewModel.birthdate, displayedComponents: .date)
                     Button {
-                        print("save")
+                        viewModel.saveChanges()
                     } label: {
                         Text("Save changes")
                     }
@@ -37,8 +32,8 @@ struct AccountView: View {
                 }
 
                 Section {
-                    Toggle("Extra Napkins", isOn: $extraNapkins)
-                    Toggle("Frequent Refiils", isOn: $frequentRefills)
+                    Toggle("Extra Napkins", isOn: $viewModel.extraNapkins)
+                    Toggle("Frequent Refiils", isOn: $viewModel.frequentRefills)
                 } header: {
                     Text("Requests")
                 }
@@ -47,8 +42,17 @@ struct AccountView: View {
             .tint(.brandPrimary)
             .navigationTitle("⚙️ Account")
         }
-        
+        .alert(
+            viewModel.alertItem?.title ?? "Error",
+            isPresented: .constant(viewModel.alertItem != nil),
+            presenting: viewModel.alertItem
+        ) { _ in
+            Button("Ok") {}
+        } message: { item in
+            item.message
+        }
     }
+    
 }
 
 #Preview {

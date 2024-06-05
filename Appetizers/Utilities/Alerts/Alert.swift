@@ -14,6 +14,7 @@ struct AlertItem: Identifiable {
 }
 
 struct AlertContent {
+    //MARK: - Newtwork Alerts
     static let invalidData = AlertItem(
         title: "Server Error",
         message: Text("The data received from the server was invalid. Please contact support.")
@@ -32,6 +33,17 @@ struct AlertContent {
     static let unableToComplete = AlertItem(
         title: "Server Error",
         message: Text("Unable to complete your request at this time. Please check your internet connection.")
+    )
+    
+    //MARK: - Account Alerts
+    static let invalidForm = AlertItem(
+        title: "Invalid Form",
+        message: Text("Please ensure all fields in the form have been filled out.")
+    )
+    
+    static let invalidEmail = AlertItem(
+        title: "Invalid Email",
+        message: Text("Please ensure your email is correct.")
     )
 }
 
