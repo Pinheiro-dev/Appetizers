@@ -45,5 +45,15 @@ struct AlertContent {
         title: "Invalid Email",
         message: Text("Please ensure your email is correct.")
     )
+    
+    static let userSaveSuccess = AlertItem(
+        title: "Profile Saved",
+        message: Text("Your profile information was successfully saved.")
+    )
+    
+    static let invalidUserData = AlertItem(
+        title: "Profile Error",
+        message: Text("There was an error saving or retrieving your profile.")
+    )
 }
 
