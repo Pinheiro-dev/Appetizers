@@ -16,6 +16,7 @@ struct AppetizerListView: View {
                 if viewModel.isLoading {
                     List(MockData.appetizers) { mockAppetizer in
                         AppetizerListCell(appetizer: mockAppetizer)
+                            .listRowSeparator(.hidden)
                     }
                     .redacted(reason: .placeholder)
                     .blinking(duration: viewModel.appetizers.isEmpty ? 0.7 : 0)
@@ -24,6 +25,7 @@ struct AppetizerListView: View {
                 } else {
                     List(viewModel.appetizers) { appetizer in
                         AppetizerListCell(appetizer: appetizer)
+                            .listRowSeparator(.hidden)
                             .onTapGesture {
                                 viewModel.isShowingDetail = true
                                 viewModel.selectedAppetizer = appetizer

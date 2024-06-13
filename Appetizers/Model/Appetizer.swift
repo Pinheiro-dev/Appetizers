@@ -34,18 +34,24 @@ struct MockData {
         carbs: 99
     )
     
-    static let appetizers = [
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-        samppleAppetizer,
-    ]
+    static let appetizers: [Appetizer] = {
+        var items: [Appetizer] = []
+        for index in 0...9 {
+            items.append(
+                .init(
+                    id: index + 1,
+                    name: "Test Appetizer",
+                    description: "This is description for my appetizer. It's yummy.",
+                    price: 9.99,
+                    imageURL: "",
+                    calories: 99,
+                    protein: 99,
+                    carbs: 99
+                )
+            )
+        }
+        return items
+    }()
     
     static let orderItemOne = Appetizer(
         id: 0001,
