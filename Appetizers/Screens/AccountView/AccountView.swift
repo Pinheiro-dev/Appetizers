@@ -39,7 +39,6 @@ struct AccountView: View {
                 }
                     
             }
-            .tint(.brandPrimary)
             .navigationTitle("⚙️ Account")
         }
         .onAppear {

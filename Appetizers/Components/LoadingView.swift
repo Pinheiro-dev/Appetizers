@@ -13,7 +13,6 @@ struct LoadingView: View {
             Color(.systemBackground)
                 .ignoresSafeArea()
             ProgressView()
-                .tint(.brandPrimary)
 
         }
     }

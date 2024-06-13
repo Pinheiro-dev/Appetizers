@@ -17,7 +17,7 @@ struct APButton: View {
             .frame(height: 50)
             .frame(maxWidth: .infinity)
             .foregroundStyle(.white)
-            .background(.brandPrimary)
+            .background(.accent)
             .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
