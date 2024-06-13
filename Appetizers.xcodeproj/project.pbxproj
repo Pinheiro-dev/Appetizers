@@ -14,10 +14,10 @@
 		DD3679F62BE062DA0095023E /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3679F52BE062D90095023E /* AppetizerListView.swift */; };
 		DD3679F82BE062E70095023E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3679F72BE062E70095023E /* AccountView.swift */; };
 		DD3679FA2BE062F00095023E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3679F92BE062F00095023E /* OrderView.swift */; };
+		DD58A1572C1A6E020031488C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD58A1562C1A6E020031488C /* Order.swift */; };
 		DD8B47ED2C0FF87500FE7072 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B47EC2C0FF87500FE7072 /* AccountViewModel.swift */; };
 		DD8B47EF2C0FF9E200FE7072 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B47EE2C0FF9E200FE7072 /* String+Ext.swift */; };
 		DD8B47F12C1138E600FE7072 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B47F02C1138E600FE7072 /* User.swift */; };
-		DD8B47F32C1140B500FE7072 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B47F22C1140B500FE7072 /* OrderViewModel.swift */; };
 		DD8B47F62C1143A800FE7072 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B47F52C1143A800FE7072 /* EmptyState.swift */; };
 		DD95037A2BFD6E8F00A2ED01 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9503792BFD6E8F00A2ED01 /* APButton.swift */; };
 		DD95037C2BFD6F3700A2ED01 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95037B2BFD6F3700A2ED01 /* XDismissButton.swift */; };
@@ -43,10 +43,10 @@
 		DD3679F52BE062D90095023E /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		DD3679F72BE062E70095023E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DD3679F92BE062F00095023E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		DD58A1562C1A6E020031488C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		DD8B47EC2C0FF87500FE7072 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		DD8B47EE2C0FF9E200FE7072 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		DD8B47F02C1138E600FE7072 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		DD8B47F22C1140B500FE7072 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		DD8B47F52C1143A800FE7072 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		DD9503792BFD6E8F00A2ED01 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		DD95037B2BFD6F3700A2ED01 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 			children = (
 				DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */,
 				DD3679F52BE062D90095023E /* AppetizerListView.swift */,
-				DDF8F0A62BF4475E002D92A8 /* Cells */,
 				DDF8F0AC2BF6ECF7002D92A8 /* AppetizerDetailView.swift */,
+				DDF8F0A62BF4475E002D92A8 /* Cells */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -156,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				DD3679F92BE062F00095023E /* OrderView.swift */,
-				DD8B47F22C1140B500FE7072 /* OrderViewModel.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -203,6 +202,7 @@
 			children = (
 				DDB64C4F2BEADBAD002ECFEE /* Appetizer.swift */,
 				DD8B47F02C1138E600FE7072 /* User.swift */,
+				DD58A1562C1A6E020031488C /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,7 +331,6 @@
 				DD95037A2BFD6E8F00A2ED01 /* APButton.swift in Sources */,
 				DDF8F0962BF42F45002D92A8 /* Alert.swift in Sources */,
 				DD3679E92BE062260095023E /* AppetizerTabView.swift in Sources */,
-				DD8B47F32C1140B500FE7072 /* OrderViewModel.swift in Sources */,
 				DDB64C542BEC4681002ECFEE /* NetworkManager.swift in Sources */,
 				DDF8F09C2BF440B5002D92A8 /* RemoteImage.swift in Sources */,
 				DD8B47EF2C0FF9E200FE7072 /* String+Ext.swift in Sources */,
@@ -339,6 +338,7 @@
 				DD3679E72BE062260095023E /* AppetizersApp.swift in Sources */,
 				DD3679F62BE062DA0095023E /* AppetizerListView.swift in Sources */,
 				DDF8F09A2BF43895002D92A8 /* LoadingView.swift in Sources */,
+				DD58A1572C1A6E020031488C /* Order.swift in Sources */,
 				DD3679FA2BE062F00095023E /* OrderView.swift in Sources */,
 				DD8B47F62C1143A800FE7072 /* EmptyState.swift in Sources */,
 			);
