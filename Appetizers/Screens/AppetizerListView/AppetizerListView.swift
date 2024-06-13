@@ -14,13 +14,7 @@ struct AppetizerListView: View {
         ZStack {
             NavigationStack {
                 if viewModel.isLoading {
-                    List(MockData.appetizers) { mockAppetizer in
-                        AppetizerListCell(appetizer: mockAppetizer)
-                            .listRowSeparator(.hidden)
-                    }
-                    .redacted(reason: .placeholder)
-                    .blinking(duration: viewModel.appetizers.isEmpty ? 0.7 : 0)
-                    .listStyle(.plain)
+                    AppetizerListBlink(appetizers: MockData.appetizers)
                     .navigationTitle("🍟 Appetizers")
                 } else {
                     List(viewModel.appetizers) { appetizer in
