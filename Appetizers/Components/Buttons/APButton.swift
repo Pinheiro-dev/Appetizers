@@ -19,6 +19,7 @@ struct APButton: View {
             .foregroundStyle(.white)
             .background(.accent)
             .clipShape(RoundedRectangle(cornerRadius: 10))
+            .colorScheme(.light)
     }
 }
 
