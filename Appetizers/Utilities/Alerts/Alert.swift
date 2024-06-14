@@ -13,7 +13,7 @@ struct AlertItem: Identifiable {
     let message: Text
 }
 
-struct AlertContent {
+struct AlertContext {
     //MARK: - Newtwork Alerts
     static let invalidData = AlertItem(
         title: "Server Error",

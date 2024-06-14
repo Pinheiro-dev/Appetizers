@@ -33,8 +33,8 @@ struct AppetizerListView: View {
                 
             }
             .blur(radius: viewModel.isShowingDetail ? 20 : 0)
-            .onAppear {
-                viewModel.getAppetizers()
+            .task {
+                await viewModel.getAppetizers()
             }
             
             if viewModel.isShowingDetail,
