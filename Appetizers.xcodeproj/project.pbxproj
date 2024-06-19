@@ -31,6 +31,7 @@
 		DDB64C562BEC47D5002ECFEE /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C552BEC47D5002ECFEE /* APError.swift */; };
 		DDB64C582BEC5064002ECFEE /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */; };
 		DDB64C5A2BEC5868002ECFEE /* BlinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */; };
+		DDE48D3F2C23A59200177FF6 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE48D3E2C23A59200177FF6 /* Date+Ext.swift */; };
 		DDF8F0962BF42F45002D92A8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F0952BF42F45002D92A8 /* Alert.swift */; };
 		DDF8F09A2BF43895002D92A8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F0992BF43895002D92A8 /* LoadingView.swift */; };
 		DDF8F09C2BF440B5002D92A8 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F09B2BF440B5002D92A8 /* RemoteImage.swift */; };
@@ -64,6 +65,7 @@
 		DDB64C552BEC47D5002ECFEE /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		DDB64C572BEC5064002ECFEE /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		DDB64C592BEC5868002ECFEE /* BlinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkViewModifier.swift; sourceTree = "<group>"; };
+		DDE48D3E2C23A59200177FF6 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		DDF8F0952BF42F45002D92A8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		DDF8F0992BF43895002D92A8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		DDF8F09B2BF440B5002D92A8 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				DD8B47EE2C0FF9E200FE7072 /* String+Ext.swift */,
 				DD58A15C2C1A82160031488C /* View+Ext.swift */,
 				DD58A15E2C1BDE730031488C /* Image+Ext.swift */,
+				DDE48D3E2C23A59200177FF6 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE48D3F2C23A59200177FF6 /* Date+Ext.swift in Sources */,
 				DDB64C502BEADBAD002ECFEE /* Appetizer.swift in Sources */,
 				DDB64C562BEC47D5002ECFEE /* APError.swift in Sources */,
 				DD95037C2BFD6F3700A2ED01 /* XDismissButton.swift in Sources */,
